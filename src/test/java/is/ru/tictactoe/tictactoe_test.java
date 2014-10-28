@@ -5,8 +5,15 @@ import org.junit.Test;
 
 public class tictactoe_test {
 
-    @Test
-    public void testHelloWorld() {
-	assertEquals("Hello World", helloWorld());	
-    }
+	public static void main(String args []){
+
+		org.junit.runner.JUnitCore.main("is.ru.tictactoe.tictactoe_test");
+	}
+
+	@Test	
+	public  void numberTest(){
+
+		assertEquals(1, tictactoe.number(1));
+	}
+
 }
