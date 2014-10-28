@@ -1,9 +1,9 @@
 package is.ru.tictactoe;
 
-public class tictactoetest {
+public class tictactoe_test {
 
     @test
     public void testHelloWorld() {
-	assertEquals("Hello World", TicTacToe();	
+	assertEquals("Hello World", helloWorld());	
     }
 }

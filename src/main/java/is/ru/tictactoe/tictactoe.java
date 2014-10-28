@@ -1,7 +1,7 @@
 package is.ru.tictactoe;
 
 public class tictactoe {
-
-	System.out.print("Hello World");
-
+	public static void helloWorld() {
+		System.out.print("Hello World");
+	}
 }
