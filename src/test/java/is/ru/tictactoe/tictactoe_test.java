@@ -6,7 +6,7 @@ import org.junit.Test;
 public class tictactoe_test {
 
 	public static void main(String args []){
-
+		int x = 1;
 		org.junit.runner.JUnitCore.main("is.ru.tictactoe.tictactoe_test");
 	}
 
