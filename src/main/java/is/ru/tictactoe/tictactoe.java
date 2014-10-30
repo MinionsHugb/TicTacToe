@@ -3,7 +3,7 @@ package is.ru.tictactoe;
 public class tictactoe {
 
 	public static void main(String args []){
-		String x = "gunnar";
+		System.out.println("Hello World!");
 	}
 
 	public static int number(int a) {
