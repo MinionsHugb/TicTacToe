@@ -16,4 +16,10 @@ public class tictactoe_test {
 		assertEquals(1, tictactoe.number(1));
 	}
 
+	@Test	
+	public  void layoutTest(){
+
+		assertEquals("a", tictactoe.layout());
+	}
+
 }

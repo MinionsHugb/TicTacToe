@@ -5,4 +5,11 @@ public class tictactoe {
 		
 		return a;
 	}
+
+	public static String layout () {
+		
+		return "a";
+	}
 }
+
+
