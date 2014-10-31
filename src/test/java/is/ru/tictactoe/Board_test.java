@@ -9,10 +9,19 @@ public class Board_test {
             }
 
                 @Test
-                public  void isFullEmptyBoard(){
+                public  void isFullEmptyBoardTest(){
                         int[] fields = new int[9];
                         for(int i = 0; i < 9; i++){
                                 fields[i] = 0;
+                        }
+                        assertEquals(false, Board.isFull(fields));
+                }
+
+		@Test
+                public  void isFullFullBoardTest(){
+                        int[] fields = new int[9];
+                        for(int i = 0; i < 9; i++){
+                                fields[i] = 1;
                         }
                         assertEquals(false, Board.isFull(fields));
                 }
