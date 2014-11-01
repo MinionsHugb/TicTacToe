@@ -19,13 +19,13 @@ public class Move {
 
         //Method that inputs the move into the array
         public static int[] insertMove(int p, int[] Fields, int f) {
-	    
+	    int[] oldFields = Fields;
             if (validMove(f, Fields)) {
                 Fields[f] = p;
+		return Fields;
             }
             else
-                System.out.println("Not a valid move");
-            return Fields;
+                return oldFields;
         }
 	//Method that tests if move is valid
 	public static boolean validMove(int f, int[] Fields) {
