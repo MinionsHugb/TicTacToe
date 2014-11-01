@@ -16,18 +16,15 @@ public class tictacWeb implements SparkApplication {
     }
 
     public void init(){
-        final tictactoe tic = new tictactoe();
-/*
+        final Move tic = new Move();
+	final Board b = new Board();
 
-        post(new Route("/random"){
+        post(new Route("/move"){
             @Override
             public Object handle(Request request, Response response){
-                String joke = chuckjoke.getRandom();
-                return joke;
-
+                int [] letter = tic.insertMove(1,b.fields,4);
+                return letter;
             }
-
         });
-*/
     }
 }
