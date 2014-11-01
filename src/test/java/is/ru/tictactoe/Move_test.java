@@ -33,7 +33,7 @@ public class Move_test {
                 }
 
 
-                arr[6] = 1;
+                arr[7] = 1;
 
                 assertEquals(false, Move.validMove(7, arr));
         }
