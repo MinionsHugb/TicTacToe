@@ -59,7 +59,52 @@ public class Board_test {
                 }
 
 		@Test
-                public void hasWonLose(){
+                public void hasWonWin3(){
+                	int[] temp = new int[9];
+                	temp[6] = 2;
+                	temp[7] = 2;
+                	temp[8] = 2;
+                	assertEquals(true, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonWin4(){
+                	int[] temp = new int[9];
+                	temp[0] = 2;
+                	temp[3] = 2;
+                	temp[6] = 2;
+                	assertEquals(true, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonWin5(){
+                	int[] temp = new int[9];
+                	temp[1] = 1;
+                	temp[4] = 1;
+                	temp[7] = 1;
+                	assertEquals(true, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonWin6(){
+                	int[] temp = new int[9];
+                	temp[2] = 2;
+                	temp[5] = 2;
+                	temp[8] = 2;
+                	assertEquals(true, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonWin7(){
+                	int[] temp = new int[9];
+                	temp[0] = 1;
+                	temp[4] = 1;
+                	temp[8] = 1;
+                	assertEquals(true, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose1(){
                 	int[] temp = new int[9];
                 	temp[0] = 1;
                 	temp[1] = 0;
@@ -73,6 +118,51 @@ public class Board_test {
                 	temp[3] = 1;
                 	temp[4] = 0;
                 	temp[5] = 1;
+                	assertEquals(false, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose3(){
+                	int[] temp = new int[9];
+                	temp[6] = 1;
+                	temp[7] = 1;
+                	temp[8] = 2;
+                	assertEquals(false, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose4(){
+                	int[] temp = new int[9];
+                	temp[0] = 2;
+                	temp[3] = 2;
+                	temp[6] = 1;
+                	assertEquals(false, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose5(){
+                	int[] temp = new int[9];
+                	temp[1] = 2;
+                	temp[4] = 1;
+                	temp[7] = 1;
+                	assertEquals(false, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose6(){
+                	int[] temp = new int[9];
+                	temp[2] = 0;
+                	temp[5] = 2;
+                	temp[8] = 1;
+                	assertEquals(false, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose7(){
+                	int[] temp = new int[9];
+                	temp[0] = 1;
+                	temp[4] = 2;
+                	temp[8] = 0;
                 	assertEquals(false, Board.hasWon(temp));
                 }
 }
