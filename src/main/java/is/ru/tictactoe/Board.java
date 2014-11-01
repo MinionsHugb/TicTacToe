@@ -14,15 +14,6 @@ public class Board {
         }*/
 	public static void PrintBoard(int[] f) {
 
-      /*  System.out.print("------------- \n");
-        System.out.print("| " + f[0] + " | " + f[1] + " | " + f[2] + " |\n");
-        System.out.print("------------- \n");
-        System.out.print("| " + f[3] + " | " + f[4] + " | " + f[5] + " |\n");
-        System.out.print("------------- \n");
-        System.out.print("| " + f[6] + " | " + f[7] + " | " + f[8] + " |\n");
-        System.out.print("------------- \n");
-	*/
-
 	String XorO;
 	System.out.print(" ------------- \n");
 	for (int i = 0; i < 9; i++)
@@ -43,10 +34,10 @@ public class Board {
 			f[i] = i + 1;
 			System.out.print(f[i]);
 		}
-			
+
 		if (i == 2 || i == 5)
 		{
-			System.out.print(" |\n");
+			System.out.print(" |\n ------------- \n");
 		}
 	}
 	System.out.print(" |\n -------------\n");
