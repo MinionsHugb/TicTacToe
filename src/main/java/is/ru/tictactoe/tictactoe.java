@@ -4,13 +4,13 @@ public class tictactoe {
 
 	public static int ROWS = 3;
 	public static int COLS = 3;
-	public static int[][] Board = new int[ROWS][COLS];
-
+	//public static int[][] Board = new int[ROWS][COLS];
+	
 	public static void main(String args []){
-		PrintBoard();
-	}
-
-	public static void PrintBoard()
+                Board b = new Board();
+                Board.PrintBoard(b.fields);
+        }
+	/*public static void PrintBoard()
 	{
 		System.out.print("------------- \n");
 		for (int rows = 0; rows < ROWS; rows++)
@@ -24,7 +24,7 @@ public class tictactoe {
 			System.out.print("\n");
 		}
 		System.out.print("------------- \n");
-	}
+	}*/
 
 	public static int number(int a) {
 		

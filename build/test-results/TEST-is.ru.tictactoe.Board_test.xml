@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.Board_test" tests="7" skipped="0" failures="0" errors="0" timestamp="2014-11-01T11:24:33" hostname="i-f9b44f70" time="0.02">
+<testsuite name="is.ru.tictactoe.Board_test" tests="17" skipped="0" failures="0" errors="0" timestamp="2014-11-01T11:41:58" hostname="i-f9b44f70" time="0.062">
   <properties/>
-  <testcase name="hasWonLose2" classname="is.ru.tictactoe.Board_test" time="0.004"/>
-  <testcase name="isFullFullBoardTest" classname="is.ru.tictactoe.Board_test" time="0.001"/>
-  <testcase name="hasWonLose" classname="is.ru.tictactoe.Board_test" time="0.0"/>
+  <testcase name="hasWonLose1" classname="is.ru.tictactoe.Board_test" time="0.005"/>
+  <testcase name="hasWonLose2" classname="is.ru.tictactoe.Board_test" time="0.0"/>
+  <testcase name="hasWonLose3" classname="is.ru.tictactoe.Board_test" time="0.0"/>
+  <testcase name="hasWonLose4" classname="is.ru.tictactoe.Board_test" time="0.0"/>
+  <testcase name="hasWonLose5" classname="is.ru.tictactoe.Board_test" time="0.001"/>
+  <testcase name="hasWonLose6" classname="is.ru.tictactoe.Board_test" time="0.0"/>
+  <testcase name="hasWonLose7" classname="is.ru.tictactoe.Board_test" time="0.001"/>
+  <testcase name="isFullFullBoardTest" classname="is.ru.tictactoe.Board_test" time="0.0"/>
   <testcase name="hasWonWin1" classname="is.ru.tictactoe.Board_test" time="0.001"/>
-  <testcase name="hasWonWin2" classname="is.ru.tictactoe.Board_test" time="0.0"/>
+  <testcase name="hasWonWin2" classname="is.ru.tictactoe.Board_test" time="0.001"/>
+  <testcase name="hasWonWin3" classname="is.ru.tictactoe.Board_test" time="0.001"/>
+  <testcase name="hasWonWin4" classname="is.ru.tictactoe.Board_test" time="0.001"/>
+  <testcase name="hasWonWin5" classname="is.ru.tictactoe.Board_test" time="0.001"/>
+  <testcase name="hasWonWin6" classname="is.ru.tictactoe.Board_test" time="0.001"/>
+  <testcase name="hasWonWin7" classname="is.ru.tictactoe.Board_test" time="0.0"/>
   <testcase name="isFullEmptyBoardTest" classname="is.ru.tictactoe.Board_test" time="0.001"/>
-  <testcase name="isFullNotEmptyNotFullTest" classname="is.ru.tictactoe.Board_test" time="0.0"/>
+  <testcase name="isFullNotEmptyNotFullTest" classname="is.ru.tictactoe.Board_test" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,7 +1,7 @@
 package is.ru.tictactoe;
 
 public class Board {
-        private int[] fields;
+        public int[] fields;
 
         public Board(){
                  fields = new int[9];
@@ -12,6 +12,17 @@ public class Board {
                         fields[i] = In in = System.console();
                 }
         }*/
+	public static void PrintBoard(int[] f) {
+
+        System.out.print("------------- \n");
+        System.out.print("| " + f[0] + " | " + f[1] + " | " + f[2] + " |\n");
+        System.out.print("------------- \n");
+        System.out.print("| " + f[3] + " | " + f[4] + " | " + f[5] + " |\n");
+        System.out.print("------------- \n");
+        System.out.print("| " + f[6] + " | " + f[7] + " | " + f[8] + " |\n");
+        System.out.print("------------- \n");
+
+        }
 
         public static boolean isFull(int[] fields){
                 for(int i = 0; i < 9; i++){
