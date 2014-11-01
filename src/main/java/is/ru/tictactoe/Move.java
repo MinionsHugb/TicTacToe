@@ -32,7 +32,7 @@ public class Move {
 	    if( f > 9 || f < 0) {
             	return false;
             }
-	    if(Fields[f] == 1 || Fields[f] == 2) {
+	    if(Fields[f-1] != 0) {
 	        return false;
 	    }
 	    else
