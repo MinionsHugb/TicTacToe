@@ -4,8 +4,13 @@ import java.util.Scanner;
 
 public class tictactoe {
 
+<<<<<<< HEAD
        public static void main(String args []){
              /*   Board b = new Board();
+=======
+        public static void main(String args []){
+                /*Board b = new Board();
+>>>>>>> 6f51a5d914bfa5b556b881b6fa787014a17bcd02
                 Move m = new Move();
                 boolean player1 = true;
                 while(!b.isFull(b.fields) || !b.hasWon(b.fields)){
