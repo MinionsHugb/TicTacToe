@@ -183,4 +183,19 @@ public class Board_test {
                 	temp[6] = 0;
                 	assertEquals(false, Board.hasWon(temp));
                 }
+
+		@Test
+                public void isTieTest(){
+                	int[] temp = new int[9];
+                	temp[0] = 2;
+                	temp[1] = 1;
+                	temp[2] = 2;
+                	temp[3] = 2;
+                	temp[4] = 1;
+                	temp[5] = 1;
+                	temp[6] = 1;
+                	temp[7] = 2;
+                	temp[8] = 1;
+                	assertEquals(true, Board.isTie(temp));
+                }
 }

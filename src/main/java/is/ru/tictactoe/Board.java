@@ -60,5 +60,12 @@ public class Board {
         	}
         	return false;
         }
+
+	public static boolean isTie(int[] fields){
+        	if(isFull(fields) && !hasWon(fields)){
+        		return true;
+        	}
+        	return false;
+        }
 }
 
