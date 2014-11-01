@@ -48,4 +48,31 @@ public class Board_test {
                 	temp[2] = 1;
                 	assertEquals(true, Board.hasWon(temp));
                 }
+
+		@Test
+                public void hasWonWin2(){
+                	int[] temp = new int[9];
+                	temp[3] = 1;
+                	temp[4] = 1;
+                	temp[5] = 1;
+                	assertEquals(true, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose(){
+                	int[] temp = new int[9];
+                	temp[0] = 1;
+                	temp[1] = 0;
+                	temp[2] = 1;
+                	assertEquals(false, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose2(){
+                	int[] temp = new int[9];
+                	temp[3] = 1;
+                	temp[4] = 0;
+                	temp[5] = 1;
+                	assertEquals(false, Board.hasWon(temp));
+                }
 }
