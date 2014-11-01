@@ -213,4 +213,19 @@ public class Board_test {
                 	temp[8] = 1;
                 	assertEquals(false, Board.isTie(temp));
                 }
+
+		@Test
+                public void isTieIsNotFullAndHasNotWonTest(){
+                	int[] temp = new int[9];
+                	temp[0] = 1;
+                	temp[1] = 2;
+                	temp[2] = 0;
+                	temp[3] = 0;
+                	temp[4] = 1;
+                	temp[5] = 2;
+                	temp[6] = 0;
+                	temp[7] = 0;
+                	temp[8] = 0;
+                	assertEquals(false, Board.isTie(temp));
+                }
 }
