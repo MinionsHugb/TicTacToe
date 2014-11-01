@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class tictactoe {
 
-        public static void main(String args []){
-                Board b = new Board();
+       public static void main(String args []){
+             /*   Board b = new Board();
                 Move m = new Move();
                 boolean player1 = true;
                 while(!b.isFull(b.fields) || !b.hasWon(b.fields)){
@@ -37,7 +37,7 @@ public class tictactoe {
                         else{
                                 System.out.println("VICTORY for Player 2");
                         }
-                }
+                }*/
         }
 }
 
