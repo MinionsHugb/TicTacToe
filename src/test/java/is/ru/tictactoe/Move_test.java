@@ -22,4 +22,19 @@ public class Move_test {
 
             assertEquals(arr, Move.insertMove(1, samplearr, 5));
         }
+	
+	@Test
+	public void validMoveTest(){
+
+                int[] arr = new int[9];
+                for(int i = 0; i < 9; i++){
+
+                   arr[i] = 0;
+                }
+
+
+                arr[7] = 1;
+
+                assertEquals(false, Move.validMove(7, arr));
+        }
 }
