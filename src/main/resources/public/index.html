@@ -13,45 +13,43 @@
     	    <table>
         		<tr>
         		    <td>	
-                        <button id="0" type="submit" value="0" onclick="move(this)">-</button>
+                        <button id="0" type="submit" value="0" onclick="this.innerHTML=Date()">-</button>
         		    </td>
         		    <td>
-                        <button id="1" type="submit" value="1" onclick="move(this)">-</button>
+                        <button id="1" type="submit" value="1" onclick="XorO(this)">-</button>
                     </td>
                     <td>
-                        <button id="2" type="submit" value="2" onclick="move(this)">-</button>
+                        <button id="2" type="submit" value="2" onclick="XorO(this)">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>    
-                        <button id="3" type="submit" value="3" onclick="move(this)">-</button>
+                        <button id="3" type="submit" value="3" onclick="XorO(this)">-</button>
                     </td>
                     <td>
-                        <button id="4" type="submit" value="4" onclick="move(this)">-</button>
+                        <button id="4" type="submit" value="4" onclick="XorO(this)">-</button>
                     </td>
                     <td>
-                        <button id="5" type="submit" value="5" onclick="move(this)">-</button>
+                        <button id="5" type="submit" value="5" onclick="XorO(this)">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>    
-                        <button  id="6" type="submit" value="6" onclick="move(this)">-</button>
+                        <button  id="6" type="submit" value="6" onclick="XorO(this)">-</button>
                     </td>
                     <td>
-                        <button id="7"type="submit" value="7" onclick="move(this)">-</button>
+                        <button id="7"type="submit" value="7" onclick="XorO(this)">-</button>
                     </td>
                     <td>
-                        <button id="8" type="submit" value="8" onclick="move(this)">-</button>
+                        <button id="8" type="submit" value="8" onclick="XorO(this)">-</button>
                     </td>
         	    </tr>
             </table>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-
-                $("button").click(function(btnNumber){
-
+        <script type="text/javascript">
+            function XorO(btnNumber){
+                    $(this).prop('disabled', true);
                     $.get("demo_test.asp",function(data,status){
                             $(btnNumber).hide();
                             $.ajax({move(butNumber)}) ;
