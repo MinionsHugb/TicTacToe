@@ -41,7 +41,7 @@
                         <button id="7"type="submit" value="7" onclick="XorO(this)">-</button>
                     </td>
                     <td>
-                        <button id="8" type="submit" value="8" onclick="XorO(this)">-</button>
+                        <button id="8" type="submit" value="8" onclick="xoro(this)">-</button>
                     </td>
         	    </tr>
             </table>
@@ -49,9 +49,18 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             function XorO(btnNumber){
-                    $("btnNumber").click(function(){
-                        $("btnNumber").hide();
-                    });
+                    $.ajax({
+                        type: "post",
+                        url: "/xoro",
+                        data: btnNumber.value
+                    }).done(function(result)){
+                        var temp = result;
+                        $(("#result").hide()):
+
+
+
+
+                    }
                 });
             });
         </script>
