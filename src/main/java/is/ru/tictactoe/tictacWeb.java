@@ -23,7 +23,7 @@ public class tictacWeb implements SparkApplication {
             @Override
             public Object handle(Request request, Response response){
                 int [] letter = tic.insertMove(1,b.fields,4);
-                return letter;
+                return letter[4];
             }
         });
     }
