@@ -10,18 +10,18 @@ public class Move {
 
         //Method that takes in a player and array and
         //accepts an int that represents a move
-        public static void insertMove(int p, int[] Fields) {
+        /*public static void insertMove(int p, int[] Fields) {
             Scanner sc = new Scanner(System.in);
             int f = sc.nextInt();
             sc.close();
             insertMove(p, Fields, f);
-        }
+        }*/
 
         //Method that inputs the move into the array
         public static int[] insertMove(int p, int[] Fields, int f) {
 	    
             if (validMove(f, Fields)) {
-                Fields[f-1] = p;
+                Fields[f] = p;
             }
             else
                 System.out.println("Not a valid move");
@@ -29,10 +29,10 @@ public class Move {
         }
 	//Method that tests if move is valid
 	public static boolean validMove(int f, int[] Fields) {
-	    if( f > 9 || f < 0) {
+	    if( f > 8 || f < 0) {
             	return false;
             }
-	    if(Fields[f] == 1 || Fields[f] == 2) {
+	    if(Fields[f] != 0) {
 	        return false;
 	    }
 	    else
