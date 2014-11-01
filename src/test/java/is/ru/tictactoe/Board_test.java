@@ -59,7 +59,16 @@ public class Board_test {
                 }
 
 		@Test
-                public void hasWonLose(){
+                public void hasWonWin3(){
+                	int[] temp = new int[9];
+                	temp[6] = 2;
+                	temp[7] = 2;
+                	temp[8] = 2;
+                	assertEquals(true, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose1(){
                 	int[] temp = new int[9];
                 	temp[0] = 1;
                 	temp[1] = 0;
@@ -73,6 +82,15 @@ public class Board_test {
                 	temp[3] = 1;
                 	temp[4] = 0;
                 	temp[5] = 1;
+                	assertEquals(false, Board.hasWon(temp));
+                }
+
+		@Test
+                public void hasWonLose3(){
+                	int[] temp = new int[9];
+                	temp[6] = 1;
+                	temp[7] = 1;
+                	temp[8] = 2;
                 	assertEquals(false, Board.hasWon(temp));
                 }
 }
