@@ -21,5 +21,33 @@ public class Board {
                 }
                 return true;
         }
+
+	public static boolean hasWon(int[] fields){
+        	if(fields[1] == fields[2] && fields[2] == fields[3]){
+        		return true;
+        	}
+        	if(fields[4] == fields[5] && fields[5] == fields[6]){
+        		return true;
+        	}
+        	if(fields[7] == fields[8] && fields[8] == fields[9]){
+        		return true;
+        	}
+        	if(fields[1] == fields[4] && fields[4] == fields[7]){
+        		return true;
+        	}
+        	if(fields[2] == fields[5] && fields[5] == fields[8]){
+        		return true;
+        	}
+        	if(fields[3] == fields[6] && fields[6] == fields[9]){
+        		return true;
+        	}
+        	if(fields[1] == fields[5] && fields[5] == fields[9]){
+        		return true;
+        	}
+        	if(fields[3] == fields[5] && fields[5] == fields[7]){
+        		return true;
+        	}
+        	return false;
+        }
 }
 

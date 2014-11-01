@@ -39,4 +39,13 @@ public class Board_test {
                         }
                         assertEquals(false, Board.isFull(temp));
                 }
+
+		@Test
+                public void hasWonWin1(){
+                	int[] temp = new int[9];
+                	temp[0] = 1;
+                	temp[1] = 1;
+                	temp[2] = 1;
+                	assertEquals(true, Board.hasWon(temp));
+                }
 }
