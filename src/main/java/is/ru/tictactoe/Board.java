@@ -15,7 +15,7 @@ public class Board {
 
         public static boolean isFull(int[] fields){
                 for(int i = 0; i < 9; i++){
-                        if(i == 0){
+                        if(fields[i] == 0){
                                 return false;
                         }
                 }
