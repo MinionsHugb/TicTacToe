@@ -46,21 +46,19 @@
                     </td>
         	    </tr>
             </table>
-            <!--/form-->
-                      </div>
-<div id="win"></div>
+             </div>
+            <div id="win"></div>
           
       
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
         <script type="text/javascript">
-            function move(x){
+            function move(a){
                 $.ajax({
                     type: "post",
                     url: "/move",
-                    data: 'move=' + x.value
+                    data: 'move=' + a.value
                 }).done(function(result)){
-                    var temp = result;
                     $(".theBoard").hide();
                     document.getElementById("win").innerHTML = result;
                     $("#win").show();
