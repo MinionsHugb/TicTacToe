@@ -7,13 +7,11 @@
 
     </head>
     <body>
-
-
         <div>
             <h1>Tic Tac Toe</h1>
             <!--form method="post" action="/move" class="form-inline" role="form"-->
             <p>Press gunnar to play.</p>
-            <div id=theBoard>
+            <div class=theBoard>
     	    <table>
         		<tr>
         		    <td>	
@@ -51,10 +49,7 @@
             </table>
             <!--/form-->
             </div>
-        <p id="field1"></p>
-
-
-        <input type="text" id="field2"><br><br>
+<div id="win"></div>
           </div>
       
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -67,7 +62,10 @@
                     url: "/move",
                     data: 'move=' + x.value
                 }).done(function(result)){
-                    document.getElementById("field2").value = String(result);
+                    var temp = result;
+                    $(".theBoard").hide();
+                    document.getElementById("field2").innerHTML = result;
+                    $("#win").show();
                 });
 
         </script>
