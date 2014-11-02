@@ -18,9 +18,9 @@ public class tictacWeb implements SparkApplication {
     public void init(){
         //final Move m = new Move();
        // final Board b = new Board();
-            Board b = new Board();
+            //Board b = new Board();
             //Move m = new Move();
-            boolean player1 = true;
+            //boolean player1 = true;
             //char xoro = '';
             //while(!b.isFull(b.fields) || !b.hasWon(b.fields)){
                 //b.PrintBoard(b.fields);

@@ -49,7 +49,11 @@
         	    </tr>
             </table>
             </form>
+        <p id="field1"></p>
 
+
+        <input type="text" id="field2"><br><br>
+          </div>
       
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -60,7 +64,6 @@
                     url: "/move",
                     data: 'move=' + x.value
                 }).done(function(result)){
-                    document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
                     document.getElementById("field2").value = result;
                     $("#dr").show();
                 });
