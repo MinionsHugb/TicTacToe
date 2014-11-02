@@ -24,40 +24,7 @@ public class tictacWeb implements SparkApplication {
         
 		Integer button = Integer.valueOf(request.queryParams("move"));
 		return button;
-                Board b = new Board();
-                Move m = new Move();
-                boolean player1 = true;
-                while(!b.isFull(b.fields) || !b.hasWon(b.fields)){
-                        if(player1){
-                                //return "It's your turn Player 1!";
-                                b.fields = m.insertMove(1, b.fields, button);
-                                //return "Got pass insertMove";
-                        }
-                        else{
-                                //return "It's your turn Player 2!";
-				//button = 3;
-                                b.fields = m.insertMove(2, b.fields, button);
-                        }
-                        if(player1){
-                                player1 = false;
-                        }
-                        else{
-                                player1 = true;
-                        }
-
-                }
-                if(b.isTie(b.fields)){
-                        return "DRAW!";
-                }
-                else{
-                        if(!player1){
-                                return "VICTORY for Player 1";
-                        }
-                        else{
-                                return "VICTORY for Player 2";
-                        }
-            }
-	}
+               }
          });
-}
+	}
 }
