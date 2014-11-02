@@ -5,6 +5,9 @@ public class Board {
 
         public Board(){
                  fields = new int[9];
+		 for(int i = 0; i < 9; i++){
+			fields[i] = 0;
+		 }
         }
 
         /*public void insertFields(fields[]){
@@ -31,8 +34,8 @@ public class Board {
 		}
 		else
 		{
-			f[i] = i + 1;
-			System.out.print(f[i]);
+			// = i + 1;
+			System.out.print(i+1);
 		}
 
 		if (i == 2 || i == 5)

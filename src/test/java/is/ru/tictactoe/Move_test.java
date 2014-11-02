@@ -18,9 +18,9 @@ public class Move_test {
                 }
 
                 int[] samplearr = arr;
-                arr[5] = 1;
+                arr[4] = 1;
 
-            assertEquals(arr, Move.insertMove(1, samplearr, 5));
+            assertEquals(arr, Move.insertMove(1, samplearr, 4));
         }
 	
 	@Test
@@ -38,5 +38,32 @@ public class Move_test {
          	c[7] = 'X';
 
 	    assertArrayEquals(c,Move.changeToChar(arr));
+	}
+
+	
+//Tests if method allows move in full field
+@Test
+    public void validMoveTest1(){
+
+		int[] arr = new int[9];
+		for (int i = 0; i < 9; i++) {
+			arr[i] = 0;
+		}
+		
+		arr[5] = 1;
+
+	    assertEquals(false, Move.validMove(6, arr));
+	}
+
+//Tests if method allows move other than 1-9	
+@Test
+    public void validMoveTest2(){
+
+		int[] arr = new int[9];
+		for (int i = 0; i < 9; i++) {
+			arr[i] = 0;
+		}
+
+	    assertEquals(false, Move.validMove(11, arr));
 	}
 }
