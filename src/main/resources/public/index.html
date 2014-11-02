@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <h1>Tic Tac Toe</h1>
-            <p>Press andri to play.</p>
+            <p>Press gunnar to play.</p>
     	    <table>
         		<tr>
         		    <td>	
@@ -45,7 +45,9 @@
                     </td>
         	    </tr>
             </table>
+
         </div>
+        <div id="dr"></div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             function move(resultX){
@@ -55,6 +57,7 @@
                         data: resultX.value
                     }).done(function(result)){
                         //var x document.getElementById(x);
+                        document.getElementById("dr").innerHTML = result;
                         var x = result;
                         $("#" + x).hide();
 
