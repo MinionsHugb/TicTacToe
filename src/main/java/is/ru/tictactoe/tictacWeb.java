@@ -24,7 +24,7 @@ public class tictacWeb implements SparkApplication {
             @Override
             public Object handle(Request request, Response response){
         
-		Integer button = Integer.valueOf(request.queryParams("move"));
+	       //	Integer button = Integer.valueOf(request.queryParams("move"));
 		return 3;
                }
          });

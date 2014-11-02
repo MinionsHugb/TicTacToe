@@ -38,7 +38,7 @@
                         <button  id="6" type="submit" value="6" onclick="move(this)">-</button>
                     </td>
                     <td>
-                        <button id="7"type="submit" value="7" onclick="move(this)">-</button>
+                        <button id="7" type="submit" value="7" onclick="move(this)">-</button>
                     </td>
                     <td>
                         <button id="8" type="submit" value="8" onclick="move(this)">-</button>
@@ -52,7 +52,7 @@
             <button id="again" onclick="refreshPage()">Again?</button>
         </div>
       
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript">
             function move(resultX){
                     $.ajax({
@@ -63,8 +63,6 @@
                         //var x document.getElementById(x);
                         document.getElementById("dr").innerHTML = result;
                         $("#dr").show();
-
-
                     }
                 });
             });
