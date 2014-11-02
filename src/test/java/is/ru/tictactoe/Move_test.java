@@ -1,6 +1,6 @@
 package is.ru.tictactoe;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class Move_test {
@@ -24,17 +24,19 @@ public class Move_test {
         }
 	
 	@Test
-	public void validMoveTest(){
+	public void changeToCharTest(){
+		int[] arr = new int[9];
+        	for(int i = 0; i < 9; i++){
+            		arr[i] = 0;
+         	}
+         	arr[7] = 1;
+	
+         	char[] c = new char[9];
+         	for(int i = 0; i < 9; i++){
+            		c[i] = ' ';
+         	}
+         	c[7] = 'X';
 
-                int[] arr = new int[9];
-                for(int i = 0; i < 9; i++){
-
-                   arr[i] = 0;
-                }
-
-
-                arr[7] = 1;
-
-                assertEquals(false, Move.validMove(7, arr));
-        }
+	    assertArrayEquals(c,Move.changeToChar(arr));
+	}
 }
