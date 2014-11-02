@@ -3,13 +3,10 @@
     <head>
         <title>TicTacToe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- load bootstrap for nicer ui -->
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-
-
     </head>
     <body>
-        <div class="container">
+        <div>
             <h1>Tic Tac Toe</h1>
             <p>Press gunnar to play.</p>
     	    <table>
@@ -66,13 +63,13 @@
                     document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
                     $("#dr").show();
                 });
-            }
-            function movey() {
+
+        </script>
+        <script>            function movey() {
                 document.getElementById("field1").value = "andri";
                 document.getElementById("field2").value = String("gunnar");
             }
-
-        </script>
+            </script>
     </body>
 </html>
 
