@@ -5,6 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- load bootstrap for nicer ui -->
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        function move(x){
+            $.ajax({
+                type: "post",
+                url: "/move",
+                data: 'move=' + x.value
+            }).done(function(result)){
+                document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
+                $("#dr").show();
+            });
+        }
+            
+        </script>
     </head>
     <body>
         <div class="container">
@@ -52,20 +67,7 @@
             <button id="again">Again?</button>
         </div>
       
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript">
-        function move(x){
-            $.ajax({
-                type: "post",
-                url: "/move",
-                data: 'move=' + x.value
-            }).done(function(result)){
-                document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
-                $("#dr").show();
-            });
-        }
-            
-        </script>
+
     </body>
 </html>
 
