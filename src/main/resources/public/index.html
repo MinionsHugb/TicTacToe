@@ -48,13 +48,13 @@
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
-            function move(result){
+            function move(resultX){
                     $.ajax({
                         type: "post",
                         url: "/move",
-                        data: data.value
+                        data: resultX.value
                     }).done(function(result)){
-                        var x document.getElementById(x);
+                        //var x document.getElementById(x);
                         var x = result;
                         $("#" + x).hide();
 
