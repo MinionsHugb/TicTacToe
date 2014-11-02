@@ -4,10 +4,14 @@
         <title>TicTacToe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
     </head>
     <body>
+
+
         <div>
             <h1>Tic Tac Toe</h1>
+            <form method="post" action="/move" class="form-inline" role="form">
             <p>Press gunnar to play.</p>
     	    <table>
         		<tr>
@@ -44,15 +48,21 @@
                     </td>
         	    </tr>
             </table>
+            </form>
         <p id="field1"></p>
+
+
         <input type="text" id="field2"><br><br>
           </div>
+
         <div id="dr"></div>
+        
         <div>
             <button id="again">Again?</button>
         </div>
       
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
         <script type="text/javascript">
             function move(x){
                 $.ajax({
@@ -65,8 +75,9 @@
                 });
 
         </script>
+
         <script>            function movey() {
-                document.getElementById("field1").value = "andri";
+                document.getElementById("field1").value = String("andri");
                 document.getElementById("field2").value = String("gunnar");
             }
             </script>
