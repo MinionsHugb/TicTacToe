@@ -62,7 +62,7 @@
                 $.ajax({
                     type: "post",
                     url: "/move",
-                    data: x.value
+                    data: 'move=' + x.value
                 }).done(function(result)){
                     document.getElementById("field2").value = String(result);
                 });
