@@ -9,38 +9,38 @@
     <body>
         <div>
             <h1>Tic Tac Toe</h1>
-            <!--form method="post" action="/move" class="form-inline" role="form"-->
+          </div>  <!--form method="post" action="/move" class="form-inline" role="form"-->
             <p>Press gunnar to play.</p>
             <div class="theBoard">
     	    <table>
         		<tr>
         		    <td>	
-                        <button id="0" type="submit" value="0" onclick="this.innerHTML=Date()">-</button>
+                        <button id="0" value="0" onclick="this.innerHTML=Date()">-</button>
         		    </td>
         		    <td>
-                        <button id="1" type="submit" value="1" onclick="move(this.id)">-</button>
+                        <button id="1" value="1" onclick="move(this)">-</button>
                     </td>
                     <td>
-                        <button id="2" type="submit" value="2" onclick="move(this.id)">-</button>
+                        <button id="2" value="2" onclick="move(this)">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>    
-                        <button id="3" type="submit" value="3" onclick="move(this.id)">-</button>
+                        <button id="3" value="3" onclick="move(this)">-</button>
                     </td>
                     <td>
-                        <button id="4" type="submit" value="4" onclick="move(this.id)">-</button>
+                        <button id="4" value="4" onclick="move(this)">-</button>
                     </td>
                     <td>
-                        <button id="5" type="submit" value="5" onclick="move(this.id)">-</button>
+                        <button id="5" value="5" onclick="move(this)">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>    
-                        <button  id="6" type="submit" value="6" onclick="move(this.id)">-</button>
+                        <button  id="6" value="6" onclick="move(this)">-</button>
                     </td>
                     <td>
-                        <button id="7" value="7" onclick="move(this.id)">-</button>
+                        <button id="7" value="7" onclick="move(this)">-</button>
                     </td>
                     <td>
                         <button id="8" value="8" onclick="move(this)">-</button>
@@ -48,7 +48,7 @@
         	    </tr>
             </table>
             <!--/form-->
-            </div>
+                      </div>
 <div id="win"></div>
           </div>
       
