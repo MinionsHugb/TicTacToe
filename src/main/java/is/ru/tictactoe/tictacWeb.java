@@ -27,9 +27,11 @@ public class tictacWeb implements SparkApplication {
                 post(new Route("/move"){
                     @Override
                     public Object handle(Request request, Response response){
-                        Integer button = Integer.valueOf(request.queryParams("move"));
+                        //Integer button = Integer.valueOf(request.queryParams("move"));
 
-                        return "X";
+                        return 15;
+
+
                       /*  if(player1){
                                 //return "It's your turn Player 1!";
                                 b.fields = Move.insertMove(1, b.fields, button);
@@ -65,3 +67,19 @@ public class tictacWeb implements SparkApplication {
         });
     }
 }
+/*
+public void init(){
+        final  Move m = new Move();
+        final Board b = new Board();
+
+        post(new Route("/move"){
+            @Override
+            public Object handle(Request request, Response response){
+                int tmp = 0;
+                int [] tmpArr = m.insertMove(1,b.fields,tmp);
+                char [] tmpChar = m.changeToChar(tmpArr);
+                return tmpChar;
+            }
+        });
+}
+*/
