@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "is.ru.tictactoe.tictacWeb"
+mainClassName = "is.ru.tictactoe.tictactoe"
 
 jar {
 	manifest {
@@ -19,6 +19,10 @@ dependencies {
     
     compile 'com.sparkjava:spark-core:1.1.1'	
     testCompile 'junit:junit:4.11'
+}
+
+run{
+    standardInput = System.in
 }
 
 task stage { dependsOn installApp }

@@ -20,7 +20,7 @@ public class Move_test {
                 int[] samplearr = arr;
                 arr[4] = 1;
 
-            assertEquals(arr, Move.insertMove(1, samplearr, 5));
+            assertEquals(arr, Move.insertMove(1, samplearr, 4));
         }
 	
 	@Test
