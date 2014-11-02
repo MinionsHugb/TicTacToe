@@ -30,6 +30,7 @@ public class Move {
             		else{
                 		System.out.println("Not a valid move");
 				insertMove(p, Fields);
+				isValid = true;
 			}
 		}
 		return Fields;
