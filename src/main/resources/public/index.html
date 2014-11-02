@@ -49,21 +49,21 @@
           </div>
         <div id="dr"></div>
         <div>
-            <button id="again" onclick="refreshPage()">Again?</button>
+            <button id="again">Again?</button>
         </div>
       
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript">
-            function move(resultX){
-                $.ajax({
-                    type: "post",
-                    url: "/move",
-                    data: 'move=' + resultX.value
-                }).done(function(result)){
-                    document.getElementById("dr").innerHTML = "Andri!";
-                    $("#dr").show();
-                });
+        function move(x){
+            $.ajax({
+                type: "post",
+                url: "/move",
+                data: 'move=' + x.value
+            }).done(function(result)){
+                document.getElementById("dr").innerHTML = result;
+                $("#dr").show();
             });
+        }
             
         </script>
     </body>
