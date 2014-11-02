@@ -27,6 +27,7 @@ public class tictactoe {
                         }
 
                 }
+		b.PrintBoard(b.fields);
                 if(b.isTie(b.fields)){
                         System.out.println("DRAW!");
                 }
