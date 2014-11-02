@@ -21,7 +21,8 @@ public class tictacWeb implements SparkApplication {
         post(new Route("/move"){
             @Override
             public Object handle(Request request, Response response){
-                Integer button = Integer.valueOf(request.queryParams("move"));
+                return 1;
+		Integer button = Integer.valueOf(request.queryParams("move"));
 		Board b = new Board();
                 Move m = new Move();
                 boolean player1 = true;
