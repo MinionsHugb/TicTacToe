@@ -54,13 +54,11 @@
                     $.ajax({
                         type: "post",
                         url: "/move",
-                        data: resultX.value
+                        data: 'move=' + resultX.value
                     }).done(function(result)){
                         //var x document.getElementById(x);
                         document.getElementById("dr").innerHTML = result;
-                        var x = result;
-                        $("#" + x).hide();
-
+                        $("#dr").show();
 
 
                     }
