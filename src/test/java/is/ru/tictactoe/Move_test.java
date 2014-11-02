@@ -23,26 +23,9 @@ public class Move_test {
             assertEquals(arr, Move.insertMove(1, samplearr, 4));
         }
 	
-	@Test
-	public void changeToCharTest(){
-		int[] arr = new int[9];
-        	for(int i = 0; i < 9; i++){
-            		arr[i] = 0;
-         	}
-         	arr[7] = 1;
-	
-         	char[] c = new char[9];
-         	for(int i = 0; i < 9; i++){
-            		c[i] = ' ';
-         	}
-         	c[7] = 'X';
-
-	    assertArrayEquals(c,Move.changeToChar(arr));
-	}
-
 	
 //Tests if method allows move in full field
-@Test
+    @Test
     public void validMoveTest1(){
 
 		int[] arr = new int[9];
