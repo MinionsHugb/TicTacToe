@@ -16,8 +16,10 @@ public class tictacWeb implements SparkApplication {
     }
 
     public void init(){
-        final Move m = new Move();
-	final Board b = new Board();
+        
+	//final Move m = new Move();
+	//final Board b = new Board();
+	//Move.changeToChar(b.fields);
         post(new Route("/move"){
             @Override
             public Object handle(Request request, Response response){
