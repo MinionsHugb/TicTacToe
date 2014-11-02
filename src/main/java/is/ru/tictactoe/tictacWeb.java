@@ -29,7 +29,7 @@ public class tictacWeb implements SparkApplication {
                     public Object handle(Request request, Response response){
                         Integer button = Integer.valueOf(request.queryParams("move"));
 
-                        return button;
+                        return 15;
 
 
                       /*  if(player1){
