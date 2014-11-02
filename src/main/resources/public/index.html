@@ -11,7 +11,7 @@
             <h1>Tic Tac Toe</h1>
             <!--form method="post" action="/move" class="form-inline" role="form"-->
             <p>Press gunnar to play.</p>
-            <div class=theBoard>
+            <div class="theBoard">
     	    <table>
         		<tr>
         		    <td>	
@@ -40,7 +40,7 @@
                         <button  id="6" type="submit" value="6" onclick="move(this.id)">-</button>
                     </td>
                     <td>
-                        <button id="7" type="submit" value="7" onclick="move(this.id)">-</button>
+                        <button id="7" value="7" onclick="move(this.id)">-</button>
                     </td>
                     <td>
                         <button id="8" value="8" onclick="move(this)">-</button>
@@ -64,7 +64,7 @@
                 }).done(function(result)){
                     var temp = result;
                     $(".theBoard").hide();
-                    document.getElementById("field2").innerHTML = result;
+                    document.getElementById("win").innerHTML = result;
                     $("#win").show();
                 });
 
