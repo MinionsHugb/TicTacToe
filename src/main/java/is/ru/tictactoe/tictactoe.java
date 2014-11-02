@@ -5,11 +5,8 @@ import java.util.Scanner;
 public class tictactoe {
 
        public static void main(String args []){
-             /*   Board b = new Board();
-=======
-        public static void main(String args []){
-                /*Board b = new Board();
->>>>>>> 6f51a5d914bfa5b556b881b6fa787014a17bcd02
+       Board b = new Board();
+
                 Move m = new Move();
                 boolean player1 = true;
                 while(!b.isFull(b.fields) || !b.hasWon(b.fields)){
@@ -41,7 +38,7 @@ public class tictactoe {
                         else{
                                 System.out.println("VICTORY for Player 2");
                         }
-                }*/
+                }
         }
 }
 

@@ -21,7 +21,7 @@ public class Move {
         public static int[] insertMove(int p, int[] Fields, int f) {
 
             if (f < 10 && f > 0) {
-                Fields[f] = p;
+                Fields[f-1] = p;
             }
 
             else
