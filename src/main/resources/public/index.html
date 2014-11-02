@@ -44,7 +44,7 @@
                         <button id="7" type="submit" value="7" onclick="move(this.id)">-</button>
                     </td>
                     <td>
-                        <button id="8" type="submit" value="8" onclick="movey()">-</button>
+                        <button id="8" type="submit" value="8" onclick="move()">-</button>
                     </td>
         	    </tr>
             </table>
@@ -58,13 +58,13 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
         <script type="text/javascript">
-            function movey(x){
+            function move(x){
                 $.ajax({
-                    type: "get",
+                    type: "post",
                     url: "/move",
                     data: x.value
                 }).done(function(result)){
-                    document.getElementById("field2").value = result;
+                    document.getElementById("field2").value = String(result);
                 });
 
         </script>
