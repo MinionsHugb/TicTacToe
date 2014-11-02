@@ -57,20 +57,20 @@
       
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript">
-        function movey(x){
-            $.ajax({
-                type: "post",
-                url: "/move",
-                data: 'move=' + x.value
-            }).done(function(result)){
-                document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
-                $("#dr").show();
-            });
-        }
-        function movey() {
-            document.getElementById("field1").value = "andri";
-            document.getElementById("field2").value = "gunnar"
-        }
+            function movey(x){
+                $.ajax({
+                    type: "post",
+                    url: "/move",
+                    data: 'move=' + x.value
+                }).done(function(result)){
+                    document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
+                    $("#dr").show();
+                });
+            }
+            function movey() {
+                document.getElementById("field1").value = "andri";
+                document.getElementById("field2").value = "gunnar";
+            }
 
         </script>
     </body>
