@@ -9,12 +9,11 @@ public class tictactoe {
 
                 Move m = new Move();
                 boolean player1 = true;
-                while(!b.isFull(b.fields) || !b.hasWon(b.fields)){
+                while((!b.isFull(b.fields)) && (!b.hasWon(b.fields))){
                         b.PrintBoard(b.fields);
                         if(player1){
                                 System.out.println("It's your turn Player 1!");
                                 m.insertMove(1, b.fields);
-                                System.out.println("Got pass insertMove");
                         }
                         else{
                                 System.out.println("It's your turn Player 2!");
