@@ -2,8 +2,7 @@
 <html>
     <head>
         <title>TicTacToe</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
     </head>
     <body>
@@ -15,7 +14,7 @@
     	    <table>
         		<tr>
         		    <td>	
-                        <button id="0" value="0" onclick="this.innerHTML=Date()">-</button>
+                        <button id="0" value="0" onclick="move(this)">-</button>
         		    </td>
         		    <td>
                         <button id="1" value="1" onclick="move(this)">-</button>
@@ -54,7 +53,6 @@
       
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-<script type="text/javascript">
         <script type="text/javascript">
             function move(x){
                 $.ajax({
