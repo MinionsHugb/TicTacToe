@@ -60,7 +60,7 @@
                 url: "/move",
                 data: 'move=' + x.value
             }).done(function(result)){
-                document.getElementById("dr").innerHTML = result;
+                document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
                 $("#dr").show();
             });
         }
