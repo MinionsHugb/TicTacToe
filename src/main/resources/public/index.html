@@ -55,17 +55,16 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript">
             function move(resultX){
-                    $.ajax({
-                        type: "post",
-                        url: "/move",
-                        data: 'move=' + resultX.value
-                    }).done(function(result)){
-                        //var x document.getElementById(x);
-                        document.getElementById("dr").innerHTML = "Andri!";
-                        $("#dr").show();
-                    });
+                $.ajax({
+                    type: "post",
+                    url: "/move",
+                    data: 'move=' + resultX.value
+                }).done(function(result)){
+                    document.getElementById("dr").innerHTML = "Andri!";
+                    $("#dr").show();
                 });
             });
+            
         </script>
     </body>
 </html>
