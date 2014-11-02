@@ -45,7 +45,7 @@
                         <button id="7" type="submit" value="7" onclick="move(this.id)">-</button>
                     </td>
                     <td>
-                        <button id="8" type="submit" value="8" >-</button>
+                        <button id="8" type="submit" value="8" onclick="move()">-</button>
                     </td>
         	    </tr>
             </table>
@@ -60,44 +60,7 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script type="text/javascript">
-$(document).ready(function(){
-    $(".theBoard").find(".cell").click(function(){
-        console.log("Clicked");
-    });
-});
-
-$(document).ready(function(){
-    var tour = 0;
-    $(".theBoard").find(".cell").click(function(){
-        if(tour%2==0){
-            $(this).text("O");
-        } else {
-            $(this).text("X");
-        }
-        i++;
-    });
-});
-
-$(document).ready(function(){
-    var tour = 0;
-    $(".theBoard").find(".cell").click(function(){
-        if($this.text() != ""){ return; }
-        if(tour%2==0){
-            $(this).text("O");
-        } else {
-            $(this).text("X");
-        }
-        i++;
-    });
-});
-
-
-
-
-
-
-
-        /*<script type="text/javascript">
+        <script type="text/javascript">
             function move(x){
                 $.ajax({
                     type: "post",
@@ -105,7 +68,7 @@ $(document).ready(function(){
                     data: 'move=' + x.value
                 }).done(function(result)){
                     document.getElementById("field2").value = String(result);
-                });*/
+                });
 
         </script>
     </body>
