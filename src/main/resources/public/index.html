@@ -6,20 +6,7 @@
         <!-- load bootstrap for nicer ui -->
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 
-                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript">
-        function move(x){
-            $.ajax({
-                type: "post",
-                url: "/move",
-                data: 'move=' + x.value
-            }).done(function(result)){
-                document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
-                $("#dr").show();
-            });
-        }
-            
-        </script>
+
     </head>
     <body>
         <div class="container">
@@ -56,18 +43,34 @@
                         <button id="7" type="submit" value="7" onclick="move(this.id)">-</button>
                     </td>
                     <td>
-                        <button id="8" type="submit" value="8" onclick="move(this.id)">-</button>
+                        <button id="8" type="submit" value="8" onclick="movey(this.id)">-</button>
                     </td>
         	    </tr>
             </table>
-
+        <p id="field1"></p>
           </div>
         <div id="dr"></div>
         <div>
             <button id="again">Again?</button>
         </div>
       
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        function movey(x){
+            $.ajax({
+                type: "post",
+                url: "/move",
+                data: 'move=' + x.value
+            }).done(function(result)){
+                document.getElementById("dr").innerHTML = "<p>" + result + "</p>";
+                $("#dr").show();
+            });
+        }
+        function movey() {
+            document.getElementById("field1").value = "andri";
+        }
 
+        </script>
     </body>
 </html>
 
