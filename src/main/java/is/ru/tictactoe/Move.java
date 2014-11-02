@@ -4,16 +4,13 @@ import java.util.Scanner;
 
 public class Move {
 
-        public Move() {
-                //
-        }
+        public Move() { }
 
         //Method that takes in a player and array and
         //accepts an int that represents a move
         public static void insertMove(int p, int[] Fields) {
             Scanner sc = new Scanner(System.in);
             int f = sc.nextInt();
-            //sc.close();
             insertMove(p, Fields, f);
         }
 
@@ -21,7 +18,6 @@ public class Move {
         public static int[] insertMove(int p, int[] Fields, int f) {
 	boolean isValid = false;
 		while(!isValid){
-			//isValid = validMove(f, Fields); 
 			if (validMove(f, Fields)) {
                 		Fields[f-1] = p;
 				isValid = true;
@@ -46,29 +42,6 @@ public class Move {
        		}
        		else{
             		return true;
-   	 	}
+   	 	}	
 	}
-
-	public static char[] changeToChar (int[] f) {
-        char[] c = new char[9];
-        for (int j = 0; j < 9; j++) {
-            c[j] = ' ';
-        }
-        for (int i = 0; i < 9; i++)
-        {
-            if (f[i] == 1);
-            {
-                c[i] = 'X';
-            }
-            if (f[i] == 2)
-            {
-                c[i] = 'O';
-            }
-            if (f[i] == 0)
-            {
-                c[i] = ' ';
-            }
-        }
-        return c;
-    }
 }

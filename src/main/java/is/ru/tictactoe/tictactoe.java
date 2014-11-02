@@ -9,6 +9,8 @@ public class tictactoe {
 
                 Move m = new Move();
                 boolean player1 = true;
+		//A loop that runs until the board is full or someone has won.
+		//In each iteration we print the board, call insertMove and change whos turn it is.
                 while((!b.isFull(b.fields)) && (!b.hasWon(b.fields))){
                         b.PrintBoard(b.fields);
                         if(player1){
@@ -27,6 +29,7 @@ public class tictactoe {
                         }
 
                 }
+		//Prints out the final board and reveals the result.
 		b.PrintBoard(b.fields);
                 if(b.isTie(b.fields)){
                         System.out.println("DRAW!");

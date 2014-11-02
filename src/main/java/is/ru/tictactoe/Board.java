@@ -1,8 +1,9 @@
 package is.ru.tictactoe;
 
+
 public class Board {
         public int[] fields;
-
+	//Constructor initializing every element of the array to 0.
         public Board(){
                  fields = new int[9];
 		 for(int i = 0; i < 9; i++){
@@ -10,11 +11,8 @@ public class Board {
 		 }
         }
 
-        /*public void insertFields(fields[]){
-                for(int i = 0; i < 9; i++){
-                        fields[i] = In in = System.console();
-                }
-        }*/
+    	//Prints the TicTacToe board.
+	// Noting every 1 as an X, every 2 as an O and every 0 as number of the field.
 	public static void PrintBoard(int[] f) {
 
 	String XorO;
@@ -34,7 +32,6 @@ public class Board {
 		}
 		else
 		{
-			// = i + 1;
 			System.out.print(i+1);
 		}
 
@@ -45,7 +42,8 @@ public class Board {
 	}
 	System.out.print(" |\n -------------\n");
         }
-
+	
+	//If there aren't any empty space in the board it returns true and false otherwise.
         public static boolean isFull(int[] fields){
                 for(int i = 0; i < 9; i++){
                         if(fields[i] == 0){
@@ -54,7 +52,8 @@ public class Board {
                 }
                 return true;
         }
-
+	
+	//Checks every winning combination and if the element in the fields are the same.
 	public static boolean hasWon(int[] fields){
         	if(fields[0] == fields[1] && fields[1] == fields[2] && fields[1] != 0){
         		return true;
@@ -82,7 +81,8 @@ public class Board {
         	}
         	return false;
         }
-
+	
+	//If the board is full and nobody has won it returns true and false otherwise.
 	public static boolean isTie(int[] fields){
         	if(isFull(fields) && !hasWon(fields)){
         		return true;
